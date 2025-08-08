@@ -21,6 +21,7 @@ def is_image_file(filename):
 
 def make_dataset(dir, max_dataset_size=float("inf")):
     images = []
+    print('trying to use directory:', dir)
     dir_path = Path(dir)
     assert dir_path.is_dir(), f'{dir} is not a valid directory'
 
